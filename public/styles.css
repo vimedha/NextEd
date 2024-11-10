@@ -1,0 +1,332 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em 1em;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar .logo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    margin-right: 60%;
+    color: #0099ff;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.navbar nav a {
+    margin-left: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    padding: 12px 25px;
+    font-size: 16px; /* Increased font size */
+    border: 2px solid #0099ff;  /* Border instead of solid background */
+    border-radius: 25px;        /* Rounded corners */
+    background-color: transparent; /* Transparent background */
+    transition: all 0.3s ease;
+}
+
+
+.navbar nav a:hover {
+    background-color: #0099ff;
+    color: white;   /* Text color changes on hover */
+}
+
+/* Become an Expert Section */
+.expert-section {
+    display: flex;
+    align-items: center;
+    padding: 2em 10%;
+    background-color: #fff;
+}
+
+.image-container img {
+    max-width: 80%;
+    border-radius: 5px;
+    margin-left: 20%;
+}
+
+.form-container {
+    margin-left: 2em;
+    max-width: 400px;
+}
+
+.form-container h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #000;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #000;
+}
+
+.form-container input[type="email"] {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-container input[type="checkbox"] {
+    margin-right: 0.5em;
+}
+
+.form-container button {
+    background-color: #0099ff;
+    color: #fff;
+    padding: 0.8em 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container a {
+    color: #0099ff;
+    text-decoration: none;
+}
+
+/* Why Work with Chegg Section */
+.why-chegg {
+    text-align: center;
+    padding: 3em 10%;
+    background-color: #e5f5ff;
+}
+
+.why-chegg h2 {
+    font-size: 2em;
+    margin-bottom: 1.5em;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.benefit-item {
+    max-width: 200px;
+    text-align: center;
+    margin: 1em;
+    padding: 1.5em;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1em;
+}
+
+.benefit-item h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.benefit-item p {
+    font-size: 0.9em;
+    color: #000;
+}
+
+/* Sign-In Page Section */
+.bg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('background.jpg'); /* Add your background image path here */
+    background-size: cover;
+    background-position: center;
+}
+
+.signin-form {
+    background-color: #fff;
+    padding: 2em;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.signin-form .logo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: #0099ff;
+}
+
+.signin-form h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.signin-form label {
+    display: block;
+    text-align: left;
+    font-size: 0.9em;
+    color:#000;
+    margin-bottom: 0.5em;
+}
+
+.signin-form input[type="email"] {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.signin-form button {
+    background-color: #0099ff;
+    color: #fff;
+    padding: 0.8em;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.form-links {
+    margin-top: 1em;
+}
+
+.form-links a {
+    color: #0099ff;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.form-links a.forgot-password {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+/* Earn for Every Question Solved Section */
+.earn-signup {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.earn-signup p {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.earn-signup button {
+    margin-top: 10px;
+    background-color: #0099ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.earn-signup button:hover {
+    background-color: #007acc;
+}
+
+/* Steps section styling */
+.steps-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.steps-section h2,
+.steps-section h3 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.step {
+    width: 250px;  /* Increased width for a larger tile */
+    height: 200px; /* Increased height for a larger tile */
+    text-align: center;
+    margin: 20px;
+    position: relative;
+    padding: 20px;
+    background-color: rgba(0, 153, 255, 0.1); /* Light blue with transparency */
+    border: 1px solid rgba(0, 153, 255, 0.4); /* Semi-transparent blue border */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; /* Ensures padding doesn't affect size */
+}
+
+.step-number {
+    font-size: 1em;
+    font-weight: bold;
+    color: #0099ff;
+    margin-bottom: 10px;
+    display: inline-flex;           /* Makes sure the circle is sized around the text */
+    justify-content: center;       /* Centers the text inside the circle */
+    align-items: center;           /* Centers the text vertically inside the circle */
+    width: 2em;                    /* Controls the width of the circle */
+    height: 2em;                   /* Controls the height of the circle */
+    border-radius: 50%;            /* Makes the shape circular */
+    border: 2px solid #0099ff;     /* Border instead of background */
+    color: #0099ff;                /* Text color matches the border */
+    text-align: center;            /* Ensures the text is centered */
+}
+
+.step-content h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.step-content p {
+    font-size: 1em;
+    color: #333;
+}
+
+.steps-section h3 {
+    font-size: 1.5em;
+    margin-top: 40px;
+}
+
+.steps-section button {
+    margin-top: 10px;
+    background-color: #0099ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.steps-section button:hover {
+    background-color: #007acc;
+}
