@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NextEd Expert Page</title>
+    <!-- Correct the link to the CSS file (no need to mention 'public' in the path) -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,7 +17,6 @@
                 <a href="#Learn" class="nav-btn">Learn</a>
                 <a href="#Earn" class="nav-btn">Earn</a>
                 <a href="#Grow" class="nav-btn">Grow</a>
-                
             </nav>
         </div>
     </header>
@@ -24,11 +24,13 @@
     <!-- Become an Expert Section -->
     <section class="expert-section">
         <div class="image-container">
-            <img src="https://st5.depositphotos.com/35742636/62651/i/450/depositphotos_626517938-stock-photo-stack-books-wooden-table.jpg" alt="Laptop on a table">
+            <!-- Correct image path to 'public/images/expert-laptop.jpg' -->
+            <img src="expert-laptop.jpg" alt="Laptop on a table">
         </div>
         <div class="form-container">
             <h2>Become an Expert</h2>
-            <form action="thankyou.html" method="get">
+            <!-- Updated form to post to '/thankyou' -->
+            <form action="/thankyou" method="get">
                 <label for="email">Email *</label>
                 <input type="email" id="email" name="email" required>
                 <label>
@@ -45,22 +47,22 @@
         <h2>Why work with NextEd?</h2>
         <div class="benefits">
             <div class="benefit-item">
-                <img src="https://img.freepik.com/premium-vector/working-home-flat-illustration_120816-64111.jpg?w=826" alt="Hassle-Free">
+                <img src="working-from-home.jpg" alt="Hassle-Free">
                 <h3>Hassle-Free</h3>
                 <p>Flexible work schedule allowing you to work as per your own convenience.</p>
             </div>
             <div class="benefit-item">
-                <img src="inspiration.png" alt="Knowledge">
+                <img src="knowledge.jpg" alt="Knowledge">
                 <h3>Knowledge</h3>
                 <p>Enhance your subject knowledge with international academic exposure.</p>
             </div>
             <div class="benefit-item">
-                <img src="lol.png" alt="Payouts">
+                <img src="payment.jpg" alt="Payouts">
                 <h3>Payouts</h3>
                 <p>Payment for every question solved. Top experts earn up to ₹1 Lac a month.</p>
             </div>
             <div class="benefit-item">
-                <img src="meetup.png" alt="Meet-Ups">
+                <img src="meetups.jpg" alt="Meet-Ups">
                 <h3>Meet-Ups</h3>
                 <p>Attend expert meet-ups and network with your peers to excel in your career.</p>
             </div>
