@@ -1,22 +1,39 @@
 const express = require('express');
 const path = require('path');
 const app = express();
+const port = 3002;
 
-// Serve static files from the 'public' folder
+// Middleware to handle form submissions and static files
+app.use(express.urlencoded({ extended: true })); // For parsing form data
+app.use(express.json()); // For parsing JSON data
+
+// Serve static files (HTML, CSS, JS, etc.)
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Serve the index.html page when users visit the root URL
+// Route to serve the expert form page
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-// A thank you page route (can be customized based on your needs)
-app.get('/thankyou', (req, res) => {
+// Route to handle form submission and redirect to "thank you" page
+app.post('/submit-form', (req, res) => {
+    const email = req.body.email;
+    const acceptsEmails = req.body.acceptsEmails;
+    
+    // You can handle storing the form data here (e.g., save to database)
+    console.log('Email:', email);
+    console.log('Accepts Email:', acceptsEmails);
+
+    // Redirect to the thank you page after submission
+    res.redirect('/thank-you');
+});
+
+// Route for the thank you page
+app.get('/thank-you', (req, res) => {
     res.send('<h1>Thank you for signing up!</h1>');
 });
 
-// Start the server on port 3001
-const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
+// Start the server
+app.listen(port, () => {
+    console.log(`Server is running at http://localhost:${port}`);
 });
