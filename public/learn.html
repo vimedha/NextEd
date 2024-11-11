@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +29,6 @@
            justify-content: flex-end; /* Align content to the right */
            padding: 1em 1em;
            background-color: linear-gradient(135deg, #e5f5ff 0%, #e5f5ff 100%);
-         
         }
 
         .navbar .logo {
@@ -39,7 +39,6 @@
            display: flex;
            justify-content: flex-end;
         }
-
 
         .header {
             text-align: center;
@@ -188,13 +187,99 @@
         .chat-messages::-webkit-scrollbar-thumb:hover {
             background: #ccc;
         }
+
+        /* Reviews Section */
+        .reviews {
+            width: 90%;
+            max-width: 1200px;
+            margin-top: 50px;
+            text-align: center;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .reviews h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .reviews-container {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .review-card {
+            width: 280px;
+            background-color: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+
+        .review-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .review-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        .review-card p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .review-card h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #0099ff;
+        }
+
+        .review-card p:last-child {
+            font-style: italic;
+            color: #999;
+        }
+        footer {
+            background:linear-gradient(135deg, #e5f5ff 0%, #ede8ff 100%);
+
+            color: #000;
+            text-align: center;
+            padding: 0rem;
+            font-size: 0.9rem;
+            margin-top: 5%;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+        }
+
+        footer a {
+            color: #ff9800;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="navbar">
             <div class="logo">NextEd</div>
-            
         </div>
     </header>
     <div class="header">
@@ -212,12 +297,61 @@
                 <input type="text" class="chat-input" id="userInput" placeholder="What would you like help with today?">
                 <div class="input-buttons">
                     <button class="input-button">📷</button>
-                    <button class="input-button">⌨️</button>
+                    <button class="input-button">⌨</button>
                     <button class="send-button" id="sendButton">→</button>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Reviews Section -->
+<section class="reviews">
+    <h2>What Our Users Say</h2>
+    <div class="reviews-container">
+        <div class="review-card">
+            <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="John Doe">
+            <p>"This platform made my study routine so much easier! The 24/7 availability and quick responses helped me a lot during exams."</p>
+            <h3>John Anderson</h3>
+            <p>Student</p>
+        </div>
+        <div class="review-card">
+            <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Jane Smith">
+            <p>"I love how fast the assistant provides relevant answers to my queries. It feels like having a tutor on demand!"</p>
+            <h3>Jane Smith</h3>
+            <p>College Student</p>
+        </div>
+        <div class="review-card">
+            <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Michael Lee">
+            <p>"The chat interface is easy to use, and the assistance I received during my study sessions was exceptional!"</p>
+            <h3>Michael Lee</h3>
+            <p>Undergraduate</p>
+        </div>
+        <div class="review-card">
+            <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="Emily Davis">
+            <p>"I was stuck on a tough problem, and the assistant provided a perfect step-by-step explanation. Amazing support!"</p>
+            <h3>Emily Davis</h3>
+            <p>Engineering Student</p>
+        </div>
+        <div class="review-card">
+            <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="David Brown">
+            <p>"The best tool for on-demand academic help! My grades have improved significantly with consistent support."</p>
+            <h3>David Brown</h3>
+            <p>High School Senior</p>
+        </div>
+        <div class="review-card">
+            <img src="https://randomuser.me/api/portraits/women/4.jpg" alt="Sophia Wilson">
+            <p>"I use this for every subject! Whether it's math, science, or literature, I get the help I need instantly."</p>
+            <h3>Sophia Wilson</h3>
+            <p>Graduate Student</p>
+        </div>
+    </div>
+    
+</section>
+<footer>
+    <p>&copy; 2024 YourCompany. All rights reserved.</p>
+    <p><a href="contact.html">Contact Us</a> | <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -323,9 +457,6 @@
             });
         });
     </script>
-    <footer>
-        <p>&copy; 2024 YourCompany. All rights reserved.</p>
-        <p><a href="contact.html">Contact Us</a> | <a href="privacy.html">Privacy Policy</a></p>
-    </footer>
+    
 </body>
 </html>
