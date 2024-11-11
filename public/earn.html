@@ -5,41 +5,258 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Earn with Us</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Set up basic layout and styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #e5f5ff 0%, #ede8ff 100%);
+            background-color: #f5f8fa;
+            color: #333;
+        }
+
+        header {
+            background: #fff;
+            padding: 0.75rem 0.75rem;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: flex-start;
+            padding: 1em 1em;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .navbar .logo {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: 2em;
+            margin-right: 60%;
+            color: #0099ff;
+            display: flex;
+            align-items: start;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #000;
+        }
+
+        header button {
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            background-color: #0099ff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        header button:hover {
+            background-color: #0056b3;
+        }
+
+        /* How It Works Section */
+        .how-it-works {
+            text-align: center;
+            padding: 3rem 2rem;
+        }
+
+        .how-it-works h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+
+        .steps {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .step {
+            flex: 1 1 200px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            max-width: 300px;
+        }
+
+        .step:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .step h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .step p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Benefits Section */
+        .pros {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.pros h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.pros ul {
+    list-style-type: disc; /* Use bullets */
+    padding-left: 1.5rem;
+    text-align: left; /* Align list to the left for readability */
+    display: inline-block; /* Center the list as a block */
+}
+
+.pros ul li {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+
+        /* Testimonials Section */
+        .testimonials {
+            background:linear-gradient(135deg, #e5f5ff 0%, #ede8ff 100%);
+
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .testimonials h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+
+        .testimonial-cards {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .testimonial-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 2rem;
+            width: 280px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .testimonial-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-card p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-card h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #0099ff;
+        }
+
+        .testimonial-card p:last-child {
+            font-style: italic;
+            color: #999;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+        }
+
+        footer a {
+            color: #ff9800;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section -->
     <header>
         <div class="navbar">
             <div class="logo">NextEd</div>
-            <nav>
-                <a href="learn.html">Learn</a>
-                <a href="earn.html" class="nav-btn">Earn</a>
-                <a href="grow.html" class="nav-btn">Grow</a>
-            </nav>
         </div>
-    </header>
-    <header>
-        <h1>Earn Money with Your Knowledge</h1>
+        <h1>Earn Money with Your Knowledge!!</h1>
         <p>Join us and start earning by answering questions and helping students.</p>
-        <button onclick="location.href='signin.html'">Sign In</button>
-            </header>
+       <br> <button onclick="location.href='signin.html'">Sign In</button>
+    </header>
 
     <!-- How It Works Section -->
     <section class="how-it-works">
         <h2>How It Works</h2>
         <div class="steps">
             <div class="step">
-                <h3>1. Sign Up</h3>
-                <p>Register and create your profile with us.</p>
+                <h3>Sign Up</h3>
+                <p>Join us today to unlock exciting opportunities. Start earning money by answering questions and helping students learn while enhancing your own knowledge and skills in the process.</p>
             </div>
             <div class="step">
-                <h3>2. Answer Questions</h3>
-                <p>Provide high-quality answers to students' questions.</p>
+                <h3>Answer Questions</h3>
+                <p>Provide thoughtful, high-quality answers to students' questions. Share your expertise and help others while improving your own knowledge.</p>
             </div>
             <div class="step">
-                <h3>3. Earn Money</h3>
-                <p>Get paid for every answer that meets our quality standards.</p>
+                <h3>Earn Money</h3>
+                <p>Get paid for each answer that meets our quality standards. The more you contribute, the more you earn—turn your knowledge into a source of income.</p>
             </div>
         </div>
     </section>
@@ -55,148 +272,34 @@
         </ul>
     </section>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 YourCompany. All rights reserved.</p>
-        <p><a href="contact.html">Contact Us</a> | <a href="privacy.html">Privacy Policy</a></p>
-    </footer>
-</body>
-</html>
-<style>
-/* Basic reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body and Fonts */
-body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f4f4f9;
-    line-height: 1.6;
-}
-
-/* Header */
-header {
-    background-color: #4CAF50;
-    color: #fff;
-    text-align: center;
-    padding: 2rem;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-}
-
-header p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-}
-
-header button {
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    background-color: #FF9800;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-header button:hover {
-    background-color: #e68900;
-}
-
-header nav {
-    margin-top: 1rem;
-}
-
-header nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 1rem;
-}
-
-header nav a:hover {
-    text-decoration: underline;
-}
-
-/* How It Works & Opportunities Section */
-.how-it-works, .opportunities {
-    background-color: #fff;
-    padding: 2rem;
-    text-align: center;
-}
-
-.how-it-works h2, .opportunities h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.steps, .growth-options {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 2rem;
-}
-
-.step, .option {
-    max-width: 300px;
-}
-
-.step h3, .option h3 {
-    color: #4CAF50;
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.step p, .option p {
-    font-size: 1rem;
-}
-
-/* Benefits Section */
-.pros{
-    background-color: #f9f9f9;
-    padding: 2rem;
-    text-align: center;
-}
-
-.pros h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.pros ul {
-    list-style-type: none;
-    font-size: 1.2rem;
-}
-
-.pros li {
-    margin: 0.5rem 0;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    font-size: 0.9rem;
-}
-
-footer p {
-    margin: 0.5rem 0;
-}
-
-footer a {
-    color: #ff9800;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-</style>
-</head>
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial-cards">
+            <div class="testimonial-card">
+                <img src="https://randomuser.me/api/portraits/men/10.jpg" alt="John Doe">
+                <p>"NextEd helped me improve my teaching skills while earning a steady income. The platform is easy to use and full of opportunities!"</p>
+                <h3>John Doe</h3>
+                <p>Freelancer & Tutor</p>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Jane Smith">
+                <p>"As a student, I found this platform extremely helpful. I not only learned but also earned money by answering questions."</p>
+                <h3>Jane Smith</h3>
+                <p>Student & Contributor</p>
+            </div>
+            <div class="testimonial-card">
+                <img src="https://randomuser.me/api/portraits/men/15.jpg" alt="Mark Wilson">
+                <p>"The best part of NextEd is its supportive community. I feel valued and rewarded for my knowledge and time."</p>
+                <h3>Mark Wilson</h3>
+                <p>Tutor</p>
+                </div>
+                </div>
+                </section>
+                <footer>
+                    <p>&copy; 2024 YourCompany. All rights reserved.</p>
+                    <p><a href="contact.html">Contact Us</a> | <a href="privacy.html">Privacy Policy</a></p>
+                </footer>
+                </body>
+                </html>
+                
