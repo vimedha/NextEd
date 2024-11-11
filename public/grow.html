@@ -1,58 +1,153 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grow with Us</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Earn Online</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Set up basic layout and styles */
+    body {
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: linear-gradient(135deg, #e5f5ff 0%, #ede8ff 100%);
+      background-color: #f5f8fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 3rem 2rem;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #666;
+    }
+
+    .explore-categories {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 3rem 2rem;
+    }
+
+    .category-card {
+      flex: 1;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .category-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .category-card img {
+      max-width: 100px;
+      margin-bottom: 1.5rem;
+    }
+
+    .category-card h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .category-card p {
+      font-size: 1rem;
+      color: #666;
+    }
+
+    .earn-for-questions {
+      background-color: #f0f0f0;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .earn-for-questions h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    .sign-up-btn {
+      display: inline-block;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: 600;
+      padding: 1rem 2rem;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+    }
+
+    .sign-up-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <h1>Grow Your Skills and Expertise</h1>
-        <p>Develop your knowledge and grow your career with us.</p>
-        <button onclick="location.href='signup.html'">Get Started</button>
-        <nav>
-            <a href="earn.html">Earn</a> | 
-            <a href="grow.html">Grow</a>
-        </nav>
-    </header>
+  <header>
+    <h1>Grow</h1>
+    <p>Learn to earn with only an internet connection and a mobile phone. Opportunities to make money online through businesses, gigs, freelancing, or investing.</p>
+  </header>
 
-    <!-- Opportunities Section -->
-    <section class="opportunities">
-        <h2>Opportunities for Growth</h2>
-        <div class="growth-options">
-            <div class="option">
-                <h3>Gain Knowledge</h3>
-                <p>Enhance your subject expertise by engaging with a variety of questions.</p>
-            </div>
-            <div class="option">
-                <h3>Build Your Profile</h3>
-                <p>Establish yourself as a trusted expert and earn recognition.</p>
-            </div>
-            <div class="option">
-                <h3>Expand Your Network</h3>
-                <p>Connect with other professionals and grow your network.</p>
-            </div>
-        </div>
+  <main>
+    <section class="explore-categories">
+      <h2 class="visually-hidden">Explore by category</h2>
+      <div class="category-card">
+        <img src="campaign.png" alt="Business Adda Icon">
+        <h3>Digital Products</h3>
+        <p>Fuel your passion and transform your skills into digital product to inspire and empower!.</p>
+        <a href="#" class="learn-more">Learn More</a>
+      </div>
+      <div class="category-card">
+        <img src="stock.png" alt="Online Jobs Icon">
+        <h3>Stock Market</h3>
+        <p>Your journey to financial freedom starts here: Discover the power of smart investing!.</p>
+        <a href="#" class="learn-more">Learn More</a>
+      </div>
+      <div class="category-card">
+        <img src="freelancer.png" alt="Freelance & Gigs Icon">
+        <h3>Freelance & Gigs</h3>
+        <p>Start freelancing, find freelancing jobs & make money from your home.</p>
+        <a href="#" class="learn-more">Learn More</a>
+      </div>
+      <div class="category-card">
+        <img src="money.png" alt="Money Mantra Icon">
+        <h3>Money Mantra</h3>
+        <p>Save Smarter, Live Better. Strategies for Financial Stability & Success.</p>
+        <a href="#" class="learn-more">Learn More</a>
+      </div>
     </section>
 
-    <!-- Benefits Section -->
-    <section class="benefits">
-        <h2>Why Grow with Us?</h2>
-        <ul>
-            <li>Boost your resume with real experience</li>
-            <li>Earn while you learn</li>
-            <li>Access to exclusive resources</li>
-            <li>Flexible opportunities to fit your schedule</li>
-        </ul>
+    <section class="earn-for-questions">
+      <h2>Earn for every question authored</h2>
+      <a href="#" class="sign-up-btn">Sign up</a>
     </section>
+  </main>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 YourCompany. All rights reserved.</p>
-        <p><a href="#contact">Contact Us</a> | <a href="#privacy">Privacy Policy</a></p>
-    </footer>
+  <footer>
+    <!-- Add any additional content or links here -->
+  </footer>
 </body>
 </html>
