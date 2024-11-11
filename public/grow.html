@@ -4,145 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Earn Online</title>
-  <style>
-    /* Reset some default styles */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    /* Set up basic layout and styles */
-    body {
-      font-family: 'Montserrat', Arial, sans-serif;
-      background: linear-gradient(135deg, #e5f5ff 0%, #ede8ff 100%);
-      background-color: #f5f8fa;
-      color: #333;
-    }
-
-    header {
-      background-color: #fff;
-      padding: 3rem 2rem;
-      text-align: center;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    h1 {
-      font-size: 3rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      color: #666;
-    }
-
-    .explore-categories {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 3rem 2rem;
-    }
-
-    .category-card {
-      flex: 1;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      padding: 2rem;
-      text-align: center;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .category-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    }
-
-    .category-card img {
-      max-width: 100px;
-      margin-bottom: 1.5rem;
-    }
-
-    .category-card h3 {
-      font-size: 1.5rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-    }
-
-    .category-card p {
-      font-size: 1rem;
-      color: #666;
-    }
-
-    .earn-for-questions {
-      background-color: #f0f0f0;
-      padding: 3rem 2rem;
-      text-align: center;
-    }
-
-    .earn-for-questions h2 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      margin-bottom: 1.5rem;
-    }
-
-    .sign-up-btn {
-      display: inline-block;
-      background-color: #007bff;
-      color: #fff;
-      text-decoration: none;
-      font-size: 1.2rem;
-      font-weight: 600;
-      padding: 1rem 2rem;
-      border-radius: 6px;
-      transition: background-color 0.3s;
-    }
-
-    .sign-up-btn:hover {
-      background-color: #0056b3;
-    }
-  </style>
-</head>
-<body>
+  <body>
+    <header>
+      <div class="navbar">
+          <div class="logo">NextEd</div>
+          
+      </div>
+  </header>
   <header>
     <h1>Grow</h1>
-    <p>Learn to earn with only an internet connection and a mobile phone. Opportunities to make money online through businesses, gigs, freelancing, or investing.</p>
+    <p><b>Learn to earn with only an internet connection and a mobile phone.</p>
+      <p>Opportunities to make money online through businesses, gigs, freelancing, or investing.</p>
   </header>
 
   <main>
-    <section class="explore-categories">
-      <h2 class="visually-hidden">Explore by category</h2>
-      <div class="category-card">
-        <img src="campaign.png" alt="Business Adda Icon">
-        <h3>Digital Products</h3>
-        <p>Fuel your passion and transform your skills into digital product to inspire and empower!.</p>
-        <a href="#" class="learn-more">Learn More</a>
-      </div>
-      <div class="category-card">
-        <img src="stock.png" alt="Online Jobs Icon">
-        <h3>Stock Market</h3>
-        <p>Your journey to financial freedom starts here: Discover the power of smart investing!.</p>
-        <a href="#" class="learn-more">Learn More</a>
-      </div>
-      <div class="category-card">
-        <img src="freelancer.png" alt="Freelance & Gigs Icon">
-        <h3>Freelance & Gigs</h3>
-        <p>Start freelancing, find freelancing jobs & make money from your home.</p>
-        <a href="#" class="learn-more">Learn More</a>
-      </div>
-      <div class="category-card">
-        <img src="money.png" alt="Money Mantra Icon">
-        <h3>Money Mantra</h3>
-        <p>Save Smarter, Live Better. Strategies for Financial Stability & Success.</p>
-        <a href="#" class="learn-more">Learn More</a>
+    <!-- Explore by category section -->
+    <section class="explore-section">
+      <h2>Explore by category</h2>
+      <div class="explore-categories">
+        <div class="category-card">
+          <img src="campaign.png" alt="Business Adda Icon">
+          <h3>Digital Products</h3>
+          <p>Fuel your passion and transform your skills into digital product to inspire and empower!.</p>
+          
+        </div>
+        <div class="category-card">
+          <img src="stock.png" alt="Online Jobs Icon">
+          <h3>Stock Market</h3>
+          <p>Your journey to financial freedom starts here: Discover the power of smart investing!.</p>
+          
+        </div>
+        <div class="category-card">
+          <img src="freelancer.png" alt="Freelance & Gigs Icon">
+          <h3>Freelance & Gigs</h3>
+          <p>Start freelancing, find freelancing jobs & make money from your home.</p>
+          
+        </div>
+        <div class="category-card">
+          <img src="money.png" alt="Money Mantra Icon">
+          <h3>Money Mantra</h3>
+          <p>Save Smarter, Live Better. Strategies for Financial Stability & Success.</p>
+          
+        </div>
       </div>
     </section>
 
+    <!-- Earn for every question section -->
     <section class="earn-for-questions">
       <h2>Earn for every question authored</h2>
-      <a href="#" class="sign-up-btn">Sign up</a>
+      <a href="signin.html" class="sign-up-btn">Sign up</a>
     </section>
   </main>
 
@@ -151,3 +61,135 @@
   </footer>
 </body>
 </html>
+<head>
+<style>
+  /* Reset some default styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Set up basic layout and styles */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e5f5ff 0%, #ede8ff 100%);
+    background-color: #f5f8fa;
+    color: #333;
+  }
+
+  header {
+    background:#fff;
+    padding: 0.75rem 0.75rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  .navbar {
+    display: flex;
+    justify-content:flex-start;
+    padding: 1em 1em;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar .logo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    margin-right: 60%;
+    color: #0099ff;
+    display: flex;
+   
+    align-items: start;
+}
+
+  h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+
+  header p {
+    font-size: 1.5rem;
+    color: #000;
+  }
+
+  .explore-section {
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+
+  .explore-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+
+  .explore-categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .category-card {
+    flex: 1 1 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 300px;
+  }
+
+  .category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .category-card img {
+    max-width: 100px;
+    margin-bottom: 1.5rem;
+  }
+
+  .category-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .category-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+
+  .earn-for-questions {
+    background-color: #fff;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+
+  .earn-for-questions h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+
+  .sign-up-btn {
+    display: inline-block;
+    background-color: #0099ff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+
+  .sign-up-btn:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
