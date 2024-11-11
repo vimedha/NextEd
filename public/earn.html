@@ -10,14 +10,20 @@
 <body>
     <!-- Header Section -->
     <header>
+        <div class="navbar">
+            <div class="logo">NextEd</div>
+            <nav>
+                <a href="learn.html">Learn</a>
+                <a href="earn.html" class="nav-btn">Earn</a>
+                <a href="grow.html" class="nav-btn">Grow</a>
+            </nav>
+        </div>
+    </header>
+    <header>
         <h1>Earn Money with Your Knowledge</h1>
         <p>Join us and start earning by answering questions and helping students.</p>
-        <button onclick="location.href='signup.html'">Get Started</button>
-        <nav>
-            <a href="earn.html">Earn</a> | 
-            <a href="grow.html">Grow</a>
-        </nav>
-    </header>
+        <button onclick="location.href='signin.html'">Sign In</button>
+            </header>
 
     <!-- How It Works Section -->
     <section class="how-it-works">
@@ -39,7 +45,7 @@
     </section>
 
     <!-- Benefits Section -->
-    <section class="benefit">
+    <section class="pros">
         <h2>Why Join Us?</h2>
         <ul>
             <li>Flexible working hours</li>
@@ -52,7 +58,145 @@
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 YourCompany. All rights reserved.</p>
-        <p><a href="#contact">Contact Us</a> | <a href="#privacy">Privacy Policy</a></p>
+        <p><a href="contact.html">Contact Us</a> | <a href="privacy.html">Privacy Policy</a></p>
     </footer>
 </body>
 </html>
+<style>
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Fonts */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+header button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background-color: #FF9800;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+header button:hover {
+    background-color: #e68900;
+}
+
+header nav {
+    margin-top: 1rem;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* How It Works & Opportunities Section */
+.how-it-works, .opportunities {
+    background-color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.how-it-works h2, .opportunities h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.steps, .growth-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.step, .option {
+    max-width: 300px;
+}
+
+.step h3, .option h3 {
+    color: #4CAF50;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.step p, .option p {
+    font-size: 1rem;
+}
+
+/* Benefits Section */
+.pros{
+    background-color: #f9f9f9;
+    padding: 2rem;
+    text-align: center;
+}
+
+.pros h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.pros ul {
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+
+.pros li {
+    margin: 0.5rem 0;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer a {
+    color: #ff9800;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+</style>
+</head>
